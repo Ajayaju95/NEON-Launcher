@@ -186,7 +186,7 @@ class MainActivity : Activity() {
                 val y1 = cy + inner * sin(angle).toFloat()
                 val x2 = cx + radius * cos(angle).toFloat()
                 val y2 = cy + radius * sin(angle).toFloat()
-                line(c, x1, y1, x2, y2, if (i % 5 == 0) 0xCCFFFFFF.toInt() else 0x668D98A3)
+                line(c, x1, y1, x2, y2, if (i % 5 == 0) 0xCCFFFFFF.toInt().toInt() else 0x668D98A3)
                 if (i % 5 == 0) {
                     val label = String.format(Locale.ENGLISH, "%02d", i)
                     text(c, label, cx + (radius - 21f) * cos(angle).toFloat() - 7f,
